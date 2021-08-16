@@ -1,0 +1,32 @@
+{
+    "name": "@fansy/commit-msg-validator",
+    "description": "A tool for validate commit message",
+    "version": "1.0.0",
+    "repository": "https://github.com/fanhaoyuan/commit-msg-validator.git",
+    "author": "Fansy <418536538@qq.com>",
+    "license": "MIT",
+    "keywords": [
+        "commit-message",
+        "commit-msg",
+        "git-hooks",
+        "commit-msg-validator",
+        "commit-message-validator"
+    ],
+    "bin": {
+        "cmv": "bin/app"
+    },
+    "gitHooks": {
+        "commit-msg": "node bin/app"
+    },
+    "devDependencies": {
+        "@fansy/eslint-config": "^1.0.0",
+        "@fansy/prettier-config": "^1.0.0"
+    },
+    "dependencies": {
+        "chalk": "^4.1.1",
+        "yorkie": "^2.0.0"
+    },
+    "files": [
+        "bin/app"
+    ]
+}
